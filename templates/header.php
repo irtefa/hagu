@@ -2,8 +2,11 @@
 <html>
 <head>
     <title>Shit List</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/css/vendor/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="container">
-    <h1>Shit's List</h1>
+    <div class="hero-unit">
+        <h1>Shit's List</h1>
+        <p>A place for bathroom aficionados!</p>
