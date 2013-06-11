@@ -10,7 +10,18 @@ require_once ('lib/OAuth.php');
 
 // For example, request business with id 'the-waterboy-sacramento'
 $term = $_POST["term"];
-$unsigned_url = "http://api.yelp.com/v2/search?ll=37.394669,-121.953941&term=".$term."&radius_filter=1000";
+$lat = $_POST["lat"];
+$lng = $_POST["lng"];
+$street = $_POST["street"];
+
+if($lat!="" and $lng!="") // isset does not work
+{
+    $unsigned_url = "http://api.yelp.com/v2/search?ll=".$lat.",".$lng."&term=".$term."&radius_filter=1000";
+}
+else
+{
+    $unsigned_url = "http://api.yelp.com/v2/search?location=".$street."&term=".$term."&radius_filter=1000";
+}
 
 // For examaple, search for 'tacos' in 'sf'
 //$unsigned_url = "http://api.yelp.com/v2/search?term=tacos&location=sf";
