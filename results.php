@@ -12,7 +12,8 @@ require_once ('lib/OAuth.php');
 $term = $_POST["term"];
 $lat = $_POST["lat"];
 $lng = $_POST["lng"];
-$street = $_POST["street"];
+$street = $_POST["address"];
+
 
 if($lat!="" and $lng!="") // isset does not work
 {
