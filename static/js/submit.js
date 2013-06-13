@@ -25,7 +25,7 @@ function login() {
 
     $.post('/results.php', post_data, function(response) {
         // log the response to the console
-        window.location.replace('/results.php');
+       // window.location.replace('/results.php');
     });
 }
 

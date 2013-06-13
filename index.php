@@ -1,6 +1,7 @@
 <?php
 require 'templates/header.php';
 ?>
+<form action="results.php" method="post">
 <p>Search for the place you are looking for:</p>
 <input type="text" id="term" class="input-xlarge" name="term">
 <br>
@@ -9,11 +10,12 @@ require 'templates/header.php';
 <input type="text" id="lat" class="input-xlarge" name="lat">
 <div>Longitude:</div>
 <input type="text" id="lng" class="input-xlarge" name="lng">
-<p>or fill the following box with the street address using the format "Street Address, City, State":</p>
+<p>or </p>
+<p>fill the following box with the street address using the format "Street Address, City, State":</p>
 <input type="text" id="user-put-address" class="input-xlarge" name="street">
 <br>
-<button id="submit-btn" class="btn btn-primary" type="none">Submit</button>
-<p class="hidden" id="login-invalid">Login Invalid</p>
+<input id="submit-btn" class="btn btn-primary" type="submit">
+</form>
 <?php
 require 'templates/footer.php'
 ?>
