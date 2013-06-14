@@ -66,9 +66,7 @@ require 'templates/header.php';
 $businesses = $response->{'businesses'};
 foreach($businesses as $business)
 {
-    print_r($business->{'id'});
-    echo("<br>");
-    print_r($business->{'name'});
+    print_r("<a href='/restroom.php?id=".$business->{'id'}."'>".$business->{'name'}."</a>");
     echo("<br>");
     $im_url = $business->{'image_url'};
     echo("<img src=".$im_url.">");

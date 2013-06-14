@@ -1,7 +1,7 @@
 <?php
 require 'templates/header.php';
 ?>
-<form action="results.php" method="post">
+<form action="restrooms.php" method="post">
 <p>Search for the place you are looking for:</p>
 <input type="text" id="term" class="input-xlarge" name="term">
 <br>
