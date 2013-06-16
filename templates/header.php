@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/css/vendor/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="static/js/geo.js"></script>
-    <!--
     <script type="text/javascript" src="static/js/vendor/jquery.min.js"></script>
-    <script type="text/javascript" src="static/js/submit.js"></script>
--->
 </head>
 <body class="container">
     <div class="hero-unit">
