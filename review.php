@@ -1,6 +1,5 @@
 <br>
-<script type="text/javascript" src="static/js/review.js"></script>
-<textarea rows="3" id="review" class="input-xlarge"></textarea>
+<textarea rows="3" id="review-text" class="input-xlarge"></textarea>
 <br>
 <select id="gender">
     <option>Male</option>
@@ -8,7 +7,7 @@
 </select>
 <br>
 <button id="submit-review" class="btn btn-primary">Review</button>
-<div id="review-list">
+<div>
 <?php
 require 'lib/config.php';
 $id = "irtefa-coffee";
@@ -16,7 +15,7 @@ $num = 1;
 $query = "SELECT * from Reviews WHERE yelp_id='".$id."'";
 
 $result = mysql_query($query);
-echo("<ul>");
+echo("<ul id='review-list'>");
 if(mysql_num_rows($result) > 0) {
     while($row = mysql_fetch_assoc($result)) {
         echo("<li>");

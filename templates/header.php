@@ -7,6 +7,7 @@
     <link href="static/css/vendor/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="static/js/geo.js"></script>
     <script type="text/javascript" src="static/js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/review.js"></script>
 </head>
 <body class="container">
     <div class="hero-unit">
